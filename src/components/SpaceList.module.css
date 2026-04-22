@@ -1,0 +1,13 @@
+.list {
+  list-style: none;
+  padding: 4px 0 8px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.empty {
+  padding: 16px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-align: center;
+}

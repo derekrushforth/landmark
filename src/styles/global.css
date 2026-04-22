@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f2f2f7;
+  --bg-hover: #e5e5ea;
+  --text-primary: #000000;
+  --text-secondary: rgba(0, 0, 0, 0.45);
+  --badge-bg: rgba(0, 0, 0, 0.08);
+  --active-dot: #34c759;
+  --active-bg: rgba(0, 122, 255, 0.10);
+  --input-border: rgba(0, 122, 255, 0.6);
+  --input-bg: rgba(0, 0, 0, 0.06);
+  --header-text: rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1c1e;
+    --bg-hover: #2c2c2e;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.5);
+    --badge-bg: rgba(255, 255, 255, 0.10);
+    --active-dot: #30d158;
+    --active-bg: rgba(10, 132, 255, 0.12);
+    --input-border: rgba(10, 132, 255, 0.7);
+    --input-bg: rgba(255, 255, 255, 0.08);
+    --header-text: rgba(255, 255, 255, 0.4);
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
